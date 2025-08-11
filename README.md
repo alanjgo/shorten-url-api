@@ -25,5 +25,3 @@ It's worth noting that you may run into a [Cross-Origin Resource Sharing (CORS)]
 
 You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
 =======
-# shorten-url-api
->>>>>>> 0986ff5d16df88ea8757a4de04dfd46ea67741d2
