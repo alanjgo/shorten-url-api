@@ -39,3 +39,6 @@ async function shortenUrl(originalUrl) {
     displayError('Erreur de connexion au serveur');
   }
 }
+
+/*aaaaa*/
+
