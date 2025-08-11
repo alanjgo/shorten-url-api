@@ -1,0 +1,343 @@
+* {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+
+  }
+  
+a {
+    color: hsl(257, 7%, 63%);
+    text-decoration: none;
+    font-family: 'Poppins';
+}
+
+body {
+    overflow-x: hidden;
+  }
+
+button:first-of-type {
+    margin-left: auto;
+}
+
+button {
+    margin-left: 8px;
+    background-color: hsl(180, 66%, 49%);
+    border: none;
+    border-radius: 24px;
+    padding: 10px 32px 10px 32px;
+    color: white;
+}
+
+footer {
+    background-color: hsl(260, 8%, 14%);
+    color: white;
+    font-weight: 400;
+    font-style: normal;
+    padding: 60px 0;
+}
+
+
+h1 {
+    font-weight: 700;
+    font-size: 96px;
+    color: hsl(255, 11%, 22%);
+    line-height: 1.05;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-weight: 700;
+    color: hsl(260, 8%, 14%);
+    font-size: 48px;
+    margin-bottom: 0;
+}
+header {
+    display: flex;               
+    align-items: center;          
+    padding-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;           
+}
+
+input {
+    border-radius: 10px;
+    width: 75%;
+    padding: 10px 0 10px 20px;
+}
+
+    
+nav {
+    display: flex;    
+    margin-left: 32px;      
+    gap: 16px;
+}
+
+p {
+    margin-top: 0;
+    color: hsl(257, 7%, 63%);
+}
+
+strong {
+    font-weight: 700;
+    font-style: bold;
+}
+
+
+.advanced-statistics {
+    background-color: hsl(0, 0%, 90%);
+    margin-top: -150px;
+    padding: 150px 200px;
+    position: relative;
+    z-index: -1;
+}
+
+.advanced-statistics-intro {
+    text-align: center;
+    padding-top: 0;
+    margin: 0 auto 80px auto;
+    max-width: 600px;
+}
+
+.boost {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-weight: 700;}
+
+.boost-cta {
+    gap: 30px;
+}
+
+
+.brand-recognition {
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+
+.detailed-records {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.div-boost {
+    background-color: hsl(257, 27%, 26%);
+    background-size: contain;
+    background-image: url("./images/bg-boost-desktop.svg");
+    padding: 10px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+.footer-logo {
+    margin-right: 60px;
+}
+
+.footer-logo .logo {
+    filter: brightness(0) invert(1);
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+}
+
+.footer-nav h4 {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav li {
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    color: hsl(257, 7%, 63%);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: hsl(180, 66%, 49%);
+}
+
+.fully-customizable {
+    margin-top: 80px;
+}
+
+.brand-recognition,
+.detailed-records,
+.fully-customizable {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.icon-container {
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: -80px;
+
+}
+
+.icon {
+    width: 40px;
+    height: 40px
+}
+
+.brand-recognition h3,
+.detailed-records h3,
+.fully-customizable h3 {
+    font-weight: 700;
+    color: hsl(260, 8%, 14%);
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.input-section {
+    display: flex;
+    background-color: hsl(257, 27%, 26%);
+    background-image: url("./images/bg-shorten-desktop.svg");
+    padding: 50px 50px 50px 50px;
+    border-radius: 10px;
+    margin: 60px 200px;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    margin-top: 8px;
+
+}
+
+.main-image {
+    width: 50%;
+    margin-right: -100px;
+    padding-top: 50px;
+}
+
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10rem;                   
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.main-text {
+    flex: 1;
+}
+
+.menu {
+    font-family: 'Poppins';
+    color: hsl(257, 7%, 63%);
+    border: none;
+    background: none;
+    font-weight: 500;
+}
+
+.menu :hover {
+    color: hsl(180, 66%, 49%);
+}
+
+.stats {
+    display: flex;
+    gap: 32px; /* espace entre les colonnes, ajuste selon ton design */
+    justify-content: center; /* centre les colonnes dans le parent */
+    margin-top: 32px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.social-links a {
+    display: inline-block;
+    transition: filter 0.3s ease;
+}
+
+.url-cta {
+    border-radius: 10px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.url-cta:hover {
+    background-color: hsl(180, 66%, 40%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.url-cta:active {
+    transform: scale(0.95) translateY(0);
+    background-color: hsl(180, 66%, 35%);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<style>
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+</style>
+
+## Colors
+
+### Primary
+
+- Blue 400: hsl(180, 66%, 49%)
+- Purple 950: hsl(257, 27%, 26%)
+
+### Secondary
+
+- Red 400: hsl(0, 87%, 67%)
+
+### Neutral
+
+- Gray 400: hsl(0, 0%, 75%)
+- Gray 500: hsl(257, 7%, 63%)
+- Gray 900: hsl(255, 11%, 22%)
+- Gray 950: hsl(260, 8%, 14%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Fonts
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 500, 700
