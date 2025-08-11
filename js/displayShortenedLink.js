@@ -15,18 +15,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Fonction pour raccourcir l'URL
 async function shortenUrl(originalUrl) {
-    try {
-        // Utiliser l'API tinyurl qui supporte CORS
-        const response = await fetch(`https://tinyurl.com/api-create.php?url=${encodeURIComponent(originalUrl)}`);
-        
-        if (response.ok) {
-            const shortUrl = await response.text();
-            console.log('URL raccourcie:', shortUrl);
-            // Ici vous pouvez ajouter la logique pour afficher le lien raccourci
-        } else {
-            console.error('Erreur:', response.status);
-        }
-    } catch (error) {
-        console.error('Erreur réseau:', error);
+  try {
+    const formData = new URLSearchParams();
+    formData.append('url', originalUrl);
+    
+    const response = await fetch('https://cleanuri.com/api/v1/shorten', {
+        method: 'POST',
+        body: formData
+    });
+    
+    const data = await response.json();
+    
+    if (data.result_url) {
+        console.log('URL raccourcie:', data.result_url);
+        displayShortenedLink(originalUrl, data.result_url);
+    } else {
+        console.error('Erreur:', data.error);
+        displayError('Erreur lors du raccourcissement de l\'URL');
     }
+  }
+  catch (error) {
+    console.error('Erreur réseau:', error);
+    displayError('Erreur de connexion au serveur');
+  }
 }
