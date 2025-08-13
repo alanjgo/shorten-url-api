@@ -14,20 +14,14 @@
 [] active states
 [] mobile - responsive
   [] burger menu
-[] api
+[x] api
 
 
-shorten-url-api/
-├── index.html                    # Votre page principale (déjà existant)
-├── style.css                     # Styles CSS (déjà existant)
-├── js/
-│   └── app.js                   # JavaScript côté client (NOUVEAU)
-├── api/
-│   └── shorten.js               # API serverless (déjà existant, à corriger)
-└── images/                       # Images (déjà existant)
+## limitations
 
-
-Séparation des responsabilités :
-index.html : Interface utilisateur
-js/app.js : Logique côté client
-api/shorten.js : API backend
+- error message css/js is not setup 
+- grey-background is not sticky when several links are added
+- horizontal blue line is not set
+- no active state on social links 
+- only the first copied button works
+- not responsive

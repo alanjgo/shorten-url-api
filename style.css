@@ -87,7 +87,7 @@ strong {
     background-color: hsl(0, 0%, 90%);
     margin-top: -150px;
     padding: 150px 200px;
-    position: relative;
+    position: sticky;
     z-index: -1;
 }
 
@@ -109,10 +109,21 @@ strong {
     gap: 30px;
 }
 
-
 .brand-recognition {
     margin-top: 0;
     margin-bottom: 80px;
+} 
+
+.copy-button {
+    border-radius: 10px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.copy-button:hover {
+    background-color: hsl (257, 27%, 26%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .detailed-records {
@@ -234,6 +245,36 @@ strong {
     position: relative;
     z-index: 1;
 }
+
+.link-content {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px 10px 10px 20px;
+    margin-top: 16px;
+}
+
+.shortened-links {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.shortened-url {
+    color: hsl(180, 66%, 49%);
+}
+
+.original-url {
+    flex: 1;
+    word-break: break-all;
+}
+
+.shortened-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    white-space: nowrap;
+}
+
 
 .logo {
     margin-top: 8px;
