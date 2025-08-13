@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
             shortenBtn.disabled = true;
             shortenBtn.textContent = 'Shortening...';
             
-            const response = await fetch('/api/shorten.js', {
+            const response = await fetch('/api/shorten', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
