@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         try {
             shortenBtn.disabled = true;
-            shortenBtn.textContent = 'Shortening...';
             
             const response = await fetch('/api/shorten', {
                 method: 'POST',
@@ -37,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
             showError('Network error: ' + error.message);
         } finally {
             shortenBtn.disabled = false;
-            shortenBtn.textContent = 'Shorten It!';
         }
     });
 
@@ -47,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
         linkDiv.innerHTML = `
             <div class="original-url">${originalUrl}</div>
             <div class="shortened-url">${shortUrl}</div>
-            <button class="copy-btn" onclick="copyToClipboard('${shortUrl}')">Copy</button>
+            <button id="copied" class="url-cta" onclick="copyToClipboard('${shortUrl}')">Copy</button>
         `;
         shortenedLinks.appendChild(linkDiv);
     }
@@ -63,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function copyToClipboard(text) {
-    navigator.clipboard.writeText(text).then(() => {
-        alert('Copied to clipboard!');
-    });
+    navigator.clipboard.writeText(text).then;
+    document.getElementById("copied").textContent = "Copied!";
+
 }
